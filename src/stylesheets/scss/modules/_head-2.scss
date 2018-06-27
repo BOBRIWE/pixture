@@ -1,0 +1,9 @@
+.head-2 {
+    @extend .head;
+    background: url('../images/second/bg.png') no-repeat center center;
+    background-size: cover;
+    .transparent-icon {
+        background: url('../images/second/bg.png') no-repeat center calc(50% + 16px) !important;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+@import 'vendors/variables';
+
+// bootstrap
+@import 'node_modules/bootstrap/scss/functions',
+        'node_modules/bootstrap/scss/variables',
+        'node_modules/bootstrap/scss/mixins',
+        'node_modules/bootstrap/scss/reboot',
+        'node_modules/bootstrap/scss/reboot';
+
+@import 'node_modules/bootstrap/scss/grid';
+
+
+@import 'node_modules/font-awesome/scss/font-awesome',
+        'node_modules/slick-carousel/slick/slick.scss',
+        'node_modules/slick-carousel/slick/slick-theme.scss';
+
+@import 'layout/body',
+        'layout/footer';
+
+@import 'modules/head',
+        'modules/head-2',
+        'modules/head-3',
+        'modules/credits',
+        'modules/cards';

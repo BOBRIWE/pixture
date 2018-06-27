@@ -1,0 +1,32 @@
+.head-3 {
+    @extend .head;
+    background: none;
+    height: auto;
+    .left-space {
+        text-align: left;
+        background: none;
+    }
+    .col-10 {
+        margin-top: 84px;
+        margin-bottom: 30px;
+        p {
+            font: 400 13px $montserrat;
+            line-height: 1.923;
+            color: #d6d6d6;
+        }
+    }
+    .col-5 {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        h3 {
+            font: 700 24px $montserrat;
+            line-height: 2.253;
+            color: #FFFFFF;
+        }
+        p {
+            font: 400 13px $montserrat;
+            line-height: 1.923;
+            color: #d6d6d6;
+        }
+    }
+}

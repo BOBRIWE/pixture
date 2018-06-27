@@ -1,0 +1,29 @@
+.credits {
+    @extend .head;
+    background: url('../images/credits/bg.png') no-repeat center center;
+    background-size: cover;
+    height: 615px;
+    .mid {
+        margin-top: 231px;
+        h2 {
+            font: 700 16px $montserrat;
+            text-transform: uppercase;
+            line-height: 1.375;
+            color: #FFFFFF;
+        }
+        h3 {
+            font: 700 40px $montserrat;
+            text-transform: capitalize;
+            line-height: 0.55;
+            color: #FFFFFF;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        p {
+            font: 400 13px $montserrat;
+            line-height: 1.923;
+            color: #d6d6d6;
+            text-transform: none;
+        }
+    }
+}

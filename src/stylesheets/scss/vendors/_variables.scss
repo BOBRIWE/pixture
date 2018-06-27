@@ -1,0 +1,38 @@
+// Base
+$baseColor:     #ffffff;
+$maxWidth:      1180px;
+
+// Colors
+$orange:        #f26522;
+$fontColor:     #ffffff;
+$darkBlue:      #3a4d69;
+$pColor:        #83969f;
+$firstPColor:   #b6b6b6;
+$linkColor:     #cfcfcf;
+$footerColor:   #323339;
+
+// Fonts
+$raleway:       'Raleway', sans-serif;
+$oSans:         'Open Sans', sans-serif;
+$myriadPro:     'Myriad Pro', arial;
+$montserrat:    'Montserrat', sans-serif;
+$dancingScript: 'Dancing Script', cursive;
+
+// Grid
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1180px
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1220px
+);
+
+$grid-columns:              20;
+$grid-gutter-width:         20px;
