@@ -1,6 +1,9 @@
 .cards {
+    @media screen and (max-width: map-get($container-max-widths, sm)) {
+        overflow: hidden;
+    }
     h3 {
-        font: 700 18px $montserrat;
+        @include font(700, 18px, $montserrat);
         color: #f5f5f5;
         text-transform: uppercase;
         line-height: 2.222;
@@ -11,7 +14,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
         .slider-arrow-left {
-            font-size: 40px !important;
+            font-size: ((40px / $dpx) * 1em) !important;
             color: #FFFFFF;
             position: absolute;
             display: block;
@@ -29,11 +32,17 @@
             border: none;
             outline: 0;
             left: -40px;
+            @media screen and (max-width: map-get($container-max-widths, sm)) {
+                display: none;
+            }
         }
         .slider-arrow-right {
             @extend .slider-arrow-left;
             left: auto;
             right: -40px;
+            @media screen and (max-width: map-get($container-max-widths, sm)) {
+                display: none;
+            }
         }
         white-space: nowrap;
         // height: 603px;
@@ -47,11 +56,17 @@
             height: 467px;
             overflow: hidden;
             background: #FFFFFF;
+            @media screen and (max-width: map-get($container-max-widths, sm)) {
+                height: 300px;
+            }
             img {
                 margin-left: - $grid-gutter-width / 2;
+                @media screen and (max-width: map-get($container-max-widths, sm)) {
+                    height: 100px;
+                }
             }
             h3 {
-                font: 700 25px $montserrat;
+                @include font(700, 25px, $montserrat);
                 color: #0c2539;
                 text-transform: uppercase;
                 line-height: 1.6;
@@ -59,18 +74,21 @@
                 margin-bottom: 20px;
             }
             p {
-                font: 700 13px $montserrat;
+                @include font(700, 13px, $montserrat);
                 color: #677278;
                 line-height: 1.846;
             }
             span.likes {
-                font: 400 13px $montserrat;
+                @include font(400, 13px, $montserrat);
                 color: #FFFFFF;
                 position: absolute;
                 right: 20px;
                 top: 174px;
                 i.fa {
                     margin-right: 5px;
+                }
+                @media screen and (max-width: map-get($container-max-widths, sm)) {
+                    top: 20px;
                 }
             }
             .chat {
@@ -82,14 +100,21 @@
                 height: 65px;
                 line-height: 65px;
                 vertical-align: middle;
+                @media screen and (max-width: map-get($container-max-widths, sm)) {
+                    height: 25px;
+                    line-height: 25px;
+                }
                 span.comments {
                     margin-left: 30px;
-                    font: 700 12px $montserrat;
+                    @include font(700, 12px, $montserrat);
                     line-height: 3.333;
                     i.fa {
                         color: #e5e5e5;
-                        font-size: 15px;
+                        font-size: ((15px / $dpx) * 1em);
                         margin-right: 5px;
+                    }
+                    @media screen and (max-width: map-get($container-max-widths, sm)) {
+                        margin-left: 5px;
                     }
                 }
                 button {
@@ -101,6 +126,10 @@
                     background: #f5f5f5;
                     &:focus {
                         outline: 0;
+                    }
+                    @media screen and (max-width: map-get($container-max-widths, sm)) {
+                        width: 25px;
+                        height: 25px;
                     }
                 }
             }

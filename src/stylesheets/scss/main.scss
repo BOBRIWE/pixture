@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
-@import 'vendors/variables';
+@import 'vendors/variables',
+        'vendors/mixins';
 
 // bootstrap
 @import 'node_modules/bootstrap/scss/functions',

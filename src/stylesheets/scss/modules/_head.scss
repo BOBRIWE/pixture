@@ -3,6 +3,10 @@
     background-size: cover;
     height: 916px;
     position: relative;
+    @media screen and (max-width: map-get($container-max-widths, sm)) {
+        height: 400px;
+        overflow: hidden;
+    }
     .left-space {
         color: rgb(255, 255, 255);
         position: absolute;
@@ -24,25 +28,44 @@
             bottom: 95px;
             left: 32.5px;
             transform: rotate(-90deg);
-            font: 700 12px $montserrat;
+            @include font(700, 12px, $montserrat);
             > span {
                 font-weight: 400;
+            }
+        }
+        @media screen and (max-width: map-get($container-max-widths, sm)) {
+            width: 40px;
+            > span {
+                left: 5px;
             }
         }
     }
     .body {
         .mid {
+            font-size: $dpx;
             text-transform: uppercase;
             color: rgb(255, 255, 255);
-            font: 700 132px $montserrat;
             // line-height: 102px;
-            line-height: 0.773;
+
+            @media screen and (max-width: map-get($container-max-widths, sm)) {
+                line-height: 0.3;
+                font-size: $mdpx;
+            }
             .h1 {
+                @include font(700, 132px, $montserrat);
+                line-height: 0.773;
                 position: relative;
                 width: 100%;
                 text-align: center;
                 margin-top: 336px;
+                @media screen and (max-width: map-get($container-max-widths, sm)) {
+                    text-align: left;
+                    margin-top: 50px;
+                    margin-left: 40px;
+                    width: auto;
+                }
                 .transparent-icon {
+                    font-size: $dpx;
                     position: absolute;
                     left: 50%;
                     transform: translateX(-50%) translateY(-50%);
@@ -54,6 +77,15 @@
                     border: solid transparent 14px;
                     @media (max-width: 1520px) {
                         background-size: 1520px 916px !important;
+                        font-size: $mdpx;
+                    }
+                    @media screen and (max-width: map-get($container-max-widths, sm)) {
+
+                        position: initial;
+                        border: none;
+                        transform: none;
+                        display: inline;
+                        background: none;
                     }
                     .circle {
                         width: 119px;
@@ -64,11 +96,22 @@
                         vertical-align: middle;
                         text-align: center;
                         span {
-                            font: 400 40px $dancingScript;
+                            @include font(400, 40px, $dancingScript);
                             text-transform: lowercase;
                             display: block;
                             margin-top: -12px;
                             transform: rotate(-5deg);
+                        }
+                        @media screen and (max-width: map-get($container-max-widths, sm)) {
+                            border: none;
+                            display: inline;
+                            text-align: left;
+                            span {
+                                @include font(700, 132px, $montserrat);
+                                text-transform: uppercase;
+                                display: inline;
+                                transform: none;
+                            }
                         }
                     }
                 }
@@ -77,26 +120,33 @@
     }
     .bottom {
         margin-top: 216px;
+        @media screen and (max-width: map-get($container-max-widths, sm)) {
+            margin-top: 40px;
+            margin-left: 20px;
+        }
         .text {
             color: rgb(255, 255, 255);
             h4 {
-                font: 700 24px $montserrat;
+                @include font(700, 24px, $montserrat);
                 line-height: 1.042;
             }
             p {
-                font: 400 13px $montserrat;
+                @include font(400, 13px, $montserrat);
                 line-height: 1.923;
             }
         }
         .date {
             color: rgb(255, 255, 255);
             span {
-                font: 400 13px $montserrat;
+                @include font(400, 13px, $montserrat);
                 line-height: 1.923;
             }
             .arrow {
                 height: 20px;
                 width: 100%;
+            }
+            @media screen and (max-width: map-get($container-max-widths, sm)) {
+                display: none;
             }
         }
     }

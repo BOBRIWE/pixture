@@ -1,8 +1,12 @@
 footer {
     height: 500px;
     background: #15032a;
+    @media screen and (max-width: map-get($container-max-widths, sm)) {
+        height: 400px;
+        font-size: 20px;
+    }
     h4 {
-        font: 700 11px $montserrat;
+        @include font(700, 11px, $montserrat);
         text-transform: uppercase;
         line-height: 1.091;
         color: #0d4363;
@@ -10,16 +14,16 @@ footer {
         margin-bottom: 20px;
     }
     p {
-        font: 400 12px $montserrat;
+        @include font(400, 12px, $montserrat);
         color: #FFFFFF;
         line-height: 2;
     }
     span {
-        font: 400 12px $montserrat;
+        @include font(400, 12px, $montserrat);
         color: #FFFFFF;
         line-height: 2;
         margin-bottom: 15px;
-        display: inline-block;
+        display: block;
     }
     span.policy {
         margin-top: 60px;
