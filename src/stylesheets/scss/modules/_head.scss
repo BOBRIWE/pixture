@@ -77,10 +77,10 @@
                     border: solid transparent 14px;
                     @media (max-width: 1520px) {
                         background-size: 1520px 916px !important;
-                        font-size: $mdpx;
+                        // font-size: $mdpx;
                     }
                     @media screen and (max-width: map-get($container-max-widths, sm)) {
-
+                        font-size: $mdpx;
                         position: initial;
                         border: none;
                         transform: none;
