@@ -1,3 +1,0 @@
-@mixin font($weight, $size, $family) {
-    font: $weight (($size / $dpx) * 1em) $family;
-}
